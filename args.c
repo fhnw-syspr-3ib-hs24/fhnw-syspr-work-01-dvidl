@@ -4,7 +4,7 @@ int main (int argc, char *argv[]) {
 	for(int i = 1; i < argc; i++) {
 		int valid = 1;
 		for(int j = 0; argv[i][j] != 0; j++) {
-			if (argv[i][j] < 'a' | argv[i][j] > 'z') {
+			if ((argv[i][j] < 'a') | (argv[i][j] > 'z')) {
 				valid = 0;
 			}
 		}
